@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    /* primary */
+    --verydarkblue-main-background: hsl(233, 47%, 7%);
+    --dark-desaturated-blue-card-Background: hsl(244, 38%, 16%);
+    --softViolet-accent: hsl(277, 64%, 61%);
+      /* neutral */
+    --white-mainHeading-stats: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-mainParagraph: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-statHeadings: hsla(0, 0%, 100%, 0.6);
+    --fontSize: 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: var( --verydarkblue-main-background) ;
+    color:hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    background-color: var(--dark-desaturated-blue-card-Background);
+    min-height: 320px;
+    width: 750px;
+    position: relative;
+}
+.imageHeader{
+    position:absolute;
+    right: 0;
+    width: 349.5px;
+    height: 320px;
+    
+}
+.imgColor{
+    position: absolute;
+    right: 0;
+    max-width: 349.5px;
+    height: 320px;
+    background-color: var(--softViolet-accent);
+}
+.imgColor img{
+    mix-blend-mode: overlay;
+}
+h2{
+    position: absolute;
+    left: 65px;
+    top: 50px;
+    font-size:1.5rem;
+    text-transform: capitalize;
+    color: var(--white-mainHeading-stats);
+}
+span{
+    color: var(--softViolet-accent);
+}
+.heading2{
+    position: absolute;
+    left: 65px;
+    top: 75px;
+}
+p{
+    position: absolute;
+    left: 65px;
+    top: 130px;
+    font-size:12px;
+    text-transform: capitalize;
+    color: var(--Slightly-transparent-white-mainParagraph);
+}
+.para2{
+    position: absolute;
+    left: 65px;
+    top: 146px;
+}
+.para3{
+    position: absolute;
+    left: 65px;
+    top: 162px;
+}
+.tenk{
+    position: absolute;
+    left: 65px;
+    top: 220px;
+    font-size: 1.6em;
+}
+.num{
+    position: absolute;
+    left: 170px;
+    top: 220px;
+    font-size: 1.6em;
+}
+.twel{
+    position: absolute;
+    left: 270px;
+    top: 220px;
+    font-size: 1.6em;
+}
+.comp{
+    position: absolute;
+    left: 65px;
+    top: 245px;
+    text-transform: uppercase;
+}
+.temp{
+    position: absolute;
+    left: 170px;
+    top: 245px;
+    text-transform: uppercase;
+}
+.que{
+    position: absolute;
+    left: 270px;
+    top: 245px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+    .card{
+    width: 650px;
+    }
+    .imageHeader{
+        max-width: 270px
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 320px){
+  .card{
+    width: 280px;
+    height: 540px;
+    border-radius: 20px;
+  }  
+  .imageHeader{
+    max-width: 280px;
+    height: 150px;
+    left: 1;
+    position: absolute;
+    border-radius: 20px;
+  }
+  h2{
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    font-size: 1.6em;
+  }
+  .heading2{
+    position: absolute;
+    top: 187px;
+    left: 57px;
+    font-size: 1.6em;
+  }
+  p{
+    position: absolute;
+    top:230px;
+    left: 20px;
+    font-size: 0.9em;
+  }
+  .para2{
+    position: absolute;
+    top:245px;
+    left: 27px;
+  }
+  .para3{
+    position: absolute;
+    top:260px;
+    left: 50px;
+  }
+  .tenk{
+    position: absolute;
+    top: 310px;
+    left: 115px;
+  }
+  .num{
+    position: absolute;
+    top: 370px;
+    left: 115px;
+  }
+.twel{
+    position: absolute;
+    top: 430px;
+    left: 115px;
+}
+.comp{
+    top: 335px;
+    left: 110px;
+}
+.temp{
+    top: 393px;
+    left: 105px;
+}
+.que{
+    top: 453px;
+    left: 115px;
+}
+}
